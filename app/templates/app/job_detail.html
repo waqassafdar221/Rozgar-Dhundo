@@ -1,0 +1,11 @@
+{% comment %} # return_html = f"<h1>{job_title[id]}</h1> <h3>{job_description[id]}</h3>"
+# # return HttpResponse(f'Job Detail Page {id}')
+# return HttpResponse(return_html) {% endcomment %}
+<a href='{% url "jobs_home" %}'>
+    <h3>Home</h3>
+</a>
+<h4>{{job.date}}</h4>
+
+<h1>{{job.title}}</h1> <h3>{{job.description}}</h3>
+<h3>{{job.salary}}</h3>
+<h3>Last Date To Apply: {{job.last_date}}</h3>
